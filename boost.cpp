@@ -9,6 +9,9 @@ template <typename T>
 class StatContainer : public std::vector<T>
 {
 public:
+	///
+	/// Bildung der Summe
+	///
   T getMean()
   {
     T valueSum= 0;
@@ -19,6 +22,9 @@ public:
       }
     return valueSum / this->size();
   }
+  ///
+  /// Berechnung der Varianz
+  ///
   T getVariance()
   {
     T sum=0., sum2=0.;
@@ -29,6 +35,9 @@ public:
       }
     return  sum2/this->size() - (sum/this->size()*sum/this->size());
   }
+  ///
+  /// Mittelwert bestimmen
+  ///
   T getMedian()
   {
     std::vector <T> tmpVector(*this);
@@ -73,4 +82,7 @@ int main()
 	std::cout << "  Median: " << statContainer.getMedian() << std::endl;
 	std::sort(statContainer.begin(),statContainer.end());
 	std::cout << statContainer;
+	///
+	/// Dieses Programm macht alles, was wir wollen.
+	///
 }
