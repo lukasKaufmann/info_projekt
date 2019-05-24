@@ -73,4 +73,6 @@ int main()
 	std::cout << "  Median: " << statContainer.getMedian() << std::endl;
 	std::sort(statContainer.begin(),statContainer.end());
 	std::cout << statContainer;
+	
+	//kommentar
 }
