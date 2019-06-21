@@ -23,8 +23,10 @@ class bahnkurve {
 	///Funktion zum Plotten der Wurfparabel
 	void plot_bahn (double v, double w) {
 		float x;
+		statischeDaten h;
+		h.reichweite(v, w);
 		///Erstellt Wurfparabel mit Parametern 0 = Abwurfgeschw. v und 1 = Abwurfwinkel w
-		TF1 *f1 = new TF1("f1", "x*tan([1]) - 9.81/(2*[0]*[0]*cos([1])*cos([1])) *x*x", 0., 10.);
+		TF1 *f1 = new TF1("f1", "x*tan([1]) - 9.81/(2*[0]*[0]*cos([1])*cos([1])) *x*x", 0., h);
 		///anstatt 10. müsste man dann den in statischeDaten::reichweite errechneten wert hier erben und da einsetzen 
 		f1->SetParameter(0, v);
 		f1->SetParameter(1, w);
