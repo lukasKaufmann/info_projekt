@@ -34,7 +34,7 @@ class bahnkurve {
                         outputFile << x_t << "  " << y_t << endl;
                 };
                 outputFile.close();
-                TGraph *gr = new TGraph("reibung.txt");
+                TGraph *gr = new TGraph("reibung_bahn.txt");
                 f1->Draw();
                 gr->Draw("same");
 
