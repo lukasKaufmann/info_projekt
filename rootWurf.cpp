@@ -55,9 +55,9 @@ void rootWurf () {
 	cout << "Reichweite des Wurfes:  ";
 	cout << d.reichweite(v, w) << endl;
 
-	statischeDaten t;
-	cout << "Dauer des Wurfes:  ";
-	cout << t.flugdauer(v, w) << endl;
+	//statischeDaten t;
+	//cout << "Dauer des Wurfes:  ";
+	//cout << t.flugdauer(v, w) << endl;
 
 	bahnkurve s;
 	s.plot_bahn(v, w);
