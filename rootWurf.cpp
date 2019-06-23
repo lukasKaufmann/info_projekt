@@ -2,21 +2,11 @@
 #include<fstream>
 #include<math.h>
 #include<cmath>
+#include "statischeDaten.hpp"
 
-class statischeDaten {
-	public:
-	double v; double w;
-	
-	/// Funktion zur Berechnung der Wurfweite mit Geschw. v unter Winkel w
-	double reichweite (double v, double w) {
-		return ((v*v)/9.81 * sin(2*w));
-	}
+using namespace std;
 
-	/// Funktion zur Berechnung der Flugdauer mit Geschw. v unter Winkel w
-	double flugdauer (double v, double w) {
-		return (2/9.81 * v * sin(w));
-	}
-};
+#define PI 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
 
 class bahnkurve {
 	public:
@@ -52,27 +42,23 @@ class bahnkurve {
 };
 
 void rootWurf () {
-	#define PI 3.14159265
-	using namespace std;
 
-	double veloc;
-	double winkel;
-	double wRad;
+	double v; double w; double wRad;
 
 	///Eingabe der erforderlichen Daten (Geschw. , Winkel)
 	cout << "Enter velocity [m/s]:  " << endl;
-	cin >> veloc;
+	cin >> v;
 	cout << "Enter angle between 0 and 90 degrees:  " << endl;
-	cin >> wRad; winkel = (wRad * PI/180);
+	cin >> wRad; w = (wRad * PI/180); //mir fällt gerade auf, dass wir eventuell immer mit nem falschen winkel rechnen
 
 	statischeDaten d ;
 	cout << "Reichweite des Wurfes:  ";
-	cout << d.reichweite(veloc, winkel) << endl;
+	cout << d.reichweite(v, w) << endl;
 
 	statischeDaten t;
 	cout << "Dauer des Wurfes:  ";
-	cout << t.flugdauer(veloc, winkel) << endl;
+	cout << t.flugdauer(v, w) << endl;
 
 	bahnkurve s;
-	s.plot_bahn(veloc, winkel);
+	s.plot_bahn(v, w);
 }
