@@ -21,9 +21,9 @@ class bahnkurve {
 		f1->SetParameter(1, w);
 		//f1->Draw();
 		///Wurf in Luft
-		float k = 6 * Pi * 17.1 * 0.000001 * v * 1/15; ///Reibungsfaktor
+		float k = 6 * PI * 17.1 * 0.000001 * v * 1/15; ///Reibungsfaktor
 		double g = 9.81;
-		float tU = -1/k * log( g/(k * (vy + g/k) ); ///Umkehrzeitpunkt
+		float tU = -1/k * log( g/(k * (vy + g/k)) ); ///Umkehrzeitpunkt
 		
 		ofstream outputFile;
 		outputFile.open("reibung_bahn.txt");
