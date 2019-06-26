@@ -24,9 +24,9 @@ void bahnkurve::plot(double v, double w) {
         double g = 9.81;
         
         TF1 *f2 = new TF1("fReibung", "[2]/([1]*[1]) * log(1 - [1]/[3] *x) + ([0] + [2]/[1]) * x/[3]", 0., d);
-        f3->SetParameter(0, vy); f3->SetParameter(1, k); f3->SetParameter(2, g); f3->SetParameter(3, vx);
-        f3->SetLineColor(4);
+        f2->SetParameter(0, vy); f2->SetParameter(1, k); f2->SetParameter(2, g); f2->SetParameter(3, vx);
+        f2->SetLineColor(4);
         f1->SetTitle("Bahnkurven");
         f1->Draw();
-        f3->Draw("same");
+        f2->Draw("same");
 }
