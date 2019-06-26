@@ -11,6 +11,10 @@ class statischeDaten{
         ///Funktion zur Berechnung der Reichweite des
         ///reibungsfreien Wurfes
         double reichweite(double v, double w);
+        
+        ///Funktion zur Berechnung der Flugdauer des
+        ///reibungsfreien Wurfes
+        double flugdauer(double v, double w);
 };
 
 #endif //STATISCHEDATEN_HPP__
