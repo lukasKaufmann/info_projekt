@@ -20,12 +20,12 @@ void rootWurf () {
 	cin >> wRad; w = (wRad * PI/180);
 
 	statischeDaten d ;
-	cout << "Reichweite des Wurfes:  ";
+	cout << "Reichweite des Wurfes (ohne Reibung):  ";
 	cout << d.reichweite(v, w) << endl;
 
-	//statischeDaten t;
-	//cout << "Dauer des Wurfes:  ";
-	//cout << t.flugdauer(v, w) << endl;
+	statischeDaten t;
+	cout << "Dauer des Wurfes(ohne Reibung):  ";
+	cout << t.flugdauer(v, w) << endl;
 
 	bahnkurve s;
 	s.plot(v, w);
