@@ -11,7 +11,7 @@ using namespace std;
 
 void rootWurf () {
 
-	double v; double w; double wRad;
+	double v, w, wRad, m, r;
 
 	///Eingabe der erforderlichen Daten (Geschw. , Winkel)
 	cout << "Gib eine Abwurfgeschwindigkeit [m/s] ein:  " << endl;
