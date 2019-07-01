@@ -13,7 +13,7 @@ void rootWurf () {
 
 	double v, w, wRad, m, r;
 
-	///Eingabe der erforderlichen Daten (Geschw. , Winkel)
+	///Eingabe der erforderlichen Daten (Geschw. , Winkel, Masse, Radius)
 	cout << "Gib eine Abwurfgeschwindigkeit [m/s] ein:  " << endl;
 	cin >> v;
 	while (v <= 0) {
@@ -41,15 +41,17 @@ void rootWurf () {
 		cin >> r;
 	}
 
-
+	///Berechnung der Reichweite des reibungsfreien Wurfes
 	statischeDaten d ;
 	cout << "Reichweite des Wurfes (ohne Reibung):  ";
 	cout << d.reichweite(v, wRad) << endl;
 
+	///Berechnung der Flugdauer des reibungsfreien Wurfes
 	statischeDaten t;
 	cout << "Dauer des Wurfes(ohne Reibung):  ";
 	cout << t.flugdauer(v, wRad) << endl;
 
+	///Plotten der Bahnkurve mit den eingegebenen Parametern
 	bahnkurve s;
 	s.plot(v, wRad, m, r);
 }
