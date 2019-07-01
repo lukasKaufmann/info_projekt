@@ -51,5 +51,5 @@ void rootWurf () {
 	cout << t.flugdauer(v, wRad) << endl;
 
 	bahnkurve s;
-	s.plot(v, w);
+	s.plot(v, wRad, m, r);
 }
