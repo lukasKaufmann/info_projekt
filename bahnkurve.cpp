@@ -1,5 +1,7 @@
 #include "bahnkurve.hpp"
 #include "math.h"
+#include "TF1.h"
+#include "TLegend.h"
 
 using namespace std;
 #define PI 3.141592653
