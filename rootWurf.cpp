@@ -19,6 +19,7 @@ int main () {
 	}
 	
 	cout << "Gib einen Abwurfwinkel zwischen 0 und 90 Grad ein:  " << endl;
+	cin >> w;
 	if (w <= 0 || w >= 90){
 		cout << "Eingabe des Winkels kann nicht verwertet werden. Bitte gib einen Winkel zwischen 0 und 90 Grad ein!" << endl;
 		cin >> w;
@@ -41,12 +42,12 @@ int main () {
 	///Berechnung der Reichweite des reibungsfreien Wurfes
 	statischeDaten d ;
 	cout << "Reichweite des Wurfes (ohne Reibung):  ";
-	cout << d.reichweite(v, wRad) << endl;
+	cout << d.reichweite(v, wRad) << "m" << endl;
 
 	///Berechnung der Flugdauer des reibungsfreien Wurfes
 	statischeDaten t;
 	cout << "Dauer des Wurfes(ohne Reibung):  ";
-	cout << t.flugdauer(v, wRad) << endl;
+	cout << t.flugdauer(v, wRad) << "s" << endl;
 
 	///Plotten der Bahnkurve mit den eingegebenen Parametern
 	bahnkurve s;
