@@ -1,5 +1,4 @@
 #include<iostream>
-#include<fstream>
 #include<math.h>
 #include<cmath>
 #include "statischeDaten.hpp"
@@ -26,13 +25,13 @@ int main () {
 	}
 	wRad = (w * PI/180);
 	
-	cout >> "Gib eine Masse [kg] ein:  " << endl;
+	cout << "Gib eine Masse [kg] ein:  " << endl;
 	cin >> m;
 	while (m <= 0) {
 		cout << "Was ist negative Masse? Bitte korrigiere deine Eingabe der Masse!" << endl;
 		cin >> m;
 	}
-	cout >> "Gib einen Radius [m] ein:  " << endl;
+	cout << "Gib einen Radius [m] ein:  " << endl;
 	cin >> r
 	while (r<=0) {
 		cout << "Du hast einen negativen Radius eingegeben. Bitte gib einen sinnvollen Radius ein!" << endl;
