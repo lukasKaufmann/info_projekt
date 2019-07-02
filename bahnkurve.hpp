@@ -2,6 +2,7 @@
 #define BAHNKURVE_HPP__ 
 
 #include<iostream>
+#include "statischeDaten.hpp"
 
 class bahnkurve: public statischeDaten {
         public:
