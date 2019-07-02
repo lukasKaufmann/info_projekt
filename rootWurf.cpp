@@ -6,6 +6,8 @@
 
 using namespace std;
 
+#define PI 3.14159
+
 int main () {
 
 	double v, w, wRad, m, r;
@@ -33,7 +35,7 @@ int main () {
 		cin >> m;
 	}
 	cout << "Gib einen Radius [m] ein:  " << endl;
-	cin >> r
+	cin >> r;
 	while (r<=0) {
 		cout << "Du hast einen negativen Radius eingegeben. Bitte gib einen sinnvollen Radius ein!" << endl;
 		cin >> r;
