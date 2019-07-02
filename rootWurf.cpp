@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main rootWurf () {
+int main () {
 
 	double v, w, wRad, m, r;
 
