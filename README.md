@@ -1,1 +1,2 @@
-# info_projekt
+# Schraeger Wurf
+## Christina Meinert, Lukas Kaufmann
