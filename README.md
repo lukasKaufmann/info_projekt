@@ -7,8 +7,11 @@ newer needs to be installed!
 
 ## Building the project
 To build the project you will need to run the following commands on your shell:
-```mkdir build/ \n cd build/ \n cmake ..```
-
+```
+mkdir build/
+cd build/ 
+cmake .. 
+```
 
 ## Compiling the project
 An alternative to building the project is to compile it yourself. To compile the project you use
