@@ -19,11 +19,11 @@ An alternative to building the project is to compile it yourself. To compile the
 ```
 g++ *.cpp $(root-config --clags --glibs)
 ```
-In case this doesn't work on your pc, tru the following
+In case this doesn't work on your pc, try the following
 ```
 /usr/bin/c++ -I`root-config --incdir` -pipe -m64 -fsigned-char -pthread -std=c++11 -g *.cpp `root-config --libs` 
 ```
-Both will create a file a.out which you can run by typing
+Either way a file a.out is created which you can run by typing
 ```./a.out```
 on your shell.
 
