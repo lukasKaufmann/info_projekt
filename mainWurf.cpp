@@ -32,6 +32,7 @@ int main () {
 		cout << "Was ist negative Masse? Bitte korrigiere deine Eingabe der Masse!" << endl;
 		cin >> m;
 	}
+	
 	cout << "Gib einen Radius [m] ein:  " << endl;
 	cin >> r;
 	while (r<=0) {
