@@ -9,7 +9,7 @@ list(APPEND CMAKE_PREFIX_PATH "/home/m1824717/root/")
 find_package(ROOT REQUIRED COMPONENTS MathCore Hist Tree)
 include(${ROOT_USE_FILE})
 
-add_executable(info_projekt
+add_executable(a.out
         bahnkurve.cpp
         bahnkurve.hpp
         mainWurf.cpp
@@ -17,5 +17,5 @@ add_executable(info_projekt
         statischeDaten.hpp)
 
 
-target_link_libraries(info_projekt ${ROOT_LIBRARIES})
+target_link_libraries(a.out ${ROOT_LIBRARIES})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
