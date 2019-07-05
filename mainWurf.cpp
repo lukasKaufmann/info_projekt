@@ -6,8 +6,6 @@
 
 using namespace std;
 
-#define PI 3.14159
-
 int main () {
 
 	double v, w, wRad, m, r;
@@ -26,7 +24,7 @@ int main () {
 		cout << "Eingabe des Winkels kann nicht verwertet werden. Bitte gib einen Winkel zwischen 0 und 90 Grad ein!" << endl;
 		cin >> w;
 	}
-	wRad = (w * PI/180);
+	wRad = (w * M_PI/180);
 	
 	cout << "Gib eine Masse [kg] ein:  " << endl;
 	cin >> m;
