@@ -17,6 +17,8 @@ cmake ..
 An alternative to building the project is to compile it yourself. To compile the project you use
 
 ```g++ *.cpp $(root-config --clags --glibs)```
+bzw
+```/usr/bin/c++ -I`root-config --incdir` -pipe -m64 -fsigned-char -pthread -std=c++11 -g -o projekt *.cpp `root-config --libs` ```
 
 This will create a file a.out which you can run by typing
 ```./a.out```
