@@ -7,8 +7,6 @@
 
 using namespace std;
 
-#define PI 3.141592653
-
 ///Konstruktor definieren:
 bahnkurve::bahnkurve() {
 }
@@ -34,7 +32,7 @@ void bahnkurve::plot(double v, double w, double m, double r) {
         f1->SetParameter(0, v); f1->SetParameter(1, w); f1->SetParameter(2, g);
         
         ///Flugbahn mit Reibung
-        double k = (6 * PI * 17.1 * 0.000001 * r/m); ///Reibungsfaktor/Masse nach STOKES
+        double k = (6 * M_PI * 17.1 * 0.000001 * r/m); ///Reibungsfaktor/Masse nach STOKES
         
         TF1 *f2 = new TF1("f2", "[2]/([3]*[3]) * log(1 - [3]/[0] *x) + ([1] + [2]/[3]) * x/[0]", 0., d);
         f2->SetParameter(0, vx); f2->SetParameter(1, vy); f2->SetParameter(2, g); f2->SetParameter(3, k);
