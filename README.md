@@ -14,7 +14,7 @@ make
 ```
 This will give you a file a.out which you can run by typing ```./a.out```.
 ## Compiling the project
-An alternative to building the project is to compile it yourself. To compile the project you use
+An alternative to build the project is to compile it yourself. To compile the project you use
 
 ```
 g++ *.cpp $(root-config --clags --glibs)
@@ -33,10 +33,10 @@ The program wants you to enter a few facts about the thrown object, i.e. its mas
 the way you throw it, i.e. the velocity and the angle under which the object is thrown.
 The program will ask you in the following order:
 
-1. Velocity v 
-2. Angle w
-3. Mass m
-4. Radius r
+1. velocity v 
+2. angle w
+3. mass m
+4. radius r
 
 After you succesfully entered these numbers the program will calculate the trajectory with and without
 friction (for the friction case STOKES' law is used) and open a canvas with the drawn trajectories on
