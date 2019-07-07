@@ -14,7 +14,7 @@ make
 ```
 This will give you a file a.out which you can run by typing ```./a.out```.
 ## Compiling the project
-An alternative to build the project is to compile it yourself. To compile the project you use
+An alternative to building the project is to compile it yourself. To compile the project you use
 
 ```
 g++ *.cpp $(root-config --clags --glibs)
